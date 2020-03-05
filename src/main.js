@@ -31,7 +31,7 @@ axios.interceptors.response.use(function(response){
   }else if(res.status==10){//未登陆的状态码==10
     window.location.href='/#/login' //跳转到登录页面,#:哈希路由
   }else{
-    // alert(res.msg);
+    console.log(res.msg);
   }
 })
 
