@@ -1,0 +1,15 @@
+module.exports={
+    devServer:{
+        host:'localhost',
+        port:8080,
+        proxy:{
+            '/search':{
+                target:'https://www.imooc.com',
+                changOrigin:false,
+                pathRewrite:{
+                    '/search':'/search'
+                }
+            }
+        }
+    }
+}
