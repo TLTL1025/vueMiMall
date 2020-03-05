@@ -5,10 +5,10 @@ import router from './router'
 import App from './App.vue'
 import store from './store'
 import env from './env'
-
+ 
 //发请求的时候设置一些基础值,根据前端的跨域方式做调整
-//当为接口代理时，域名是一样的，习惯叫api,转发的时候也可以切掉
-axios.defaults.baseURL='/api';
+//当为接口代理时，域名是一样的，习惯叫api,转发的时候也可以切掉 
+axios.defaults.baseURL='/api'; 
 axios.defaults.timeout=8000;
 //根据环境变量获取不同的请求地址
 axios.defaults.baseURL=env.baseURL;
